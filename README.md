@@ -34,8 +34,9 @@ While this is primarily for self-learning, **PRs and suggestions are welcome** i
 
 Feel free to reach out or follow me for updates:
 
-- 🌐 [Your Portfolio or Blog]  
-- 🐦 [Twitter/LinkedIn/GitHub handle]
+- 🌐 (https://parshvamodi.vercel.app/)
+- 🔗 [LinkedIn – Parshva Modi](https://www.linkedin.com/in/parshva-modi/)
+- 🐙 [GitHub – modiparshva](https://github.com/modiparshva)
 
 ## ⭐️ Show Your Support
 
