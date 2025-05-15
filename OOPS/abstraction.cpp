@@ -65,6 +65,8 @@ class sportsCar : public Car{
             isEngineOn = false;
             cout << brand << " " << model << " : Engine stopped !" << endl;
         }
+
+        ~sportsCar() {}
 };
 
 int main(){

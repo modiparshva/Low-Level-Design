@@ -4,25 +4,38 @@
 using namespace std;
 
 class sportsCar {
-    public:
+    private:
 // Characters
-
         string brand;
         string model;
         bool isEngineOn;
         int currentSpeed;
         int currentGear;
+        string tyre;
 
 // Constructor
-
+    public:
         sportsCar(string b,string m){
             this->brand = b;
             this->model = m;
             isEngineOn = false;
             currentSpeed = 0;
             currentGear = 0;
+            tyre = "MRF";
         }
 
+// Getters and Setters
+        int getCurrentSpeed(){
+            return this->currentSpeed;
+        }
+
+        string getTyreName(){
+            return this->tyre;
+        }
+
+        string setTyreName(string tyre){
+            this->tyre = tyre;
+        }
 // Behavoiurs
 
         void startEngine() {
@@ -62,4 +75,27 @@ class sportsCar {
             isEngineOn = false;
             cout << brand << " " << model << " : Engine stopped !" << endl;
         }
+
+        ~sportsCar() {}
 };
+
+int main(){
+    sportsCar* myCar = new sportsCar("Ford","Mustang");
+
+    myCar->startEngine();
+    myCar->shiftGear(1);
+    myCar->accelerate();
+    myCar->brake();
+    myCar->stopEngine();
+    myCar->shiftGear(0);
+    myCar->brake();
+
+    //setting arbitary value to speed
+    // myCar->currentSpeed = 500;
+    // cout << "Current Speed of Car is :" << myCar->currentSpeed << endl;
+
+    cout << "Current Speed : " << myCar->getCurrentSpeed() << endl;
+    delete myCar;
+
+    return 0;
+}
